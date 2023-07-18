@@ -1,0 +1,127 @@
+.myphotoIcon {
+  position: relative;
+  border-radius: var(--br-155xl);
+  width: 317px;
+  height: 400px;
+  object-fit: cover;
+}
+.title {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+.span,
+.title {
+  letter-spacing: -0.5px;
+}
+.span1 {
+  letter-spacing: 1px;
+}
+.subtitle {
+  position: relative;
+  font-size: var(--font-size-11xl);
+  line-height: 150%;
+  display: inline-block;
+  width: 507px;
+}
+.persontext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-8xl);
+}
+.textbutton {
+  position: relative;
+  font-size: var(--buttontext-size);
+  font-weight: 600;
+  font-family: var(--buttontext);
+  color: var(--color-white);
+  text-align: left;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-6xl);
+  background-color: var(--color-black);
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button:active {
+  opacity: 0.7;
+}
+.blockperson,
+.button,
+.person,
+.summarydescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.summarydescription {
+  flex-direction: column;
+  gap: var(--gap-6xl);
+}
+.blockperson,
+.person {
+  flex-direction: row;
+}
+.blockperson {
+  gap: var(--gap-xl);
+}
+.person {
+  align-self: stretch;
+  background-color: var(--color-white);
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 930px) {
+  .myphotoIcon {
+    width: 270px;
+    height: 350px;
+  }
+  .title {
+    font-size: var(--font-size-15xl);
+  }
+  .subtitle {
+    font-size: var(--font-size-5xl);
+  }
+  .button {
+    gap: var(--gap-7xs);
+  }
+  .summarydescription {
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 850px) {
+  .myphotoIcon {
+    width: 270px;
+    height: 350px;
+  }
+  .subtitle,
+  .title {
+    font-size: var(--font-size-xl);
+  }
+  .subtitle {
+    width: 307px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .blockperson,
+  .person,
+  .summarydescription {
+    flex-direction: column;
+  }
+  .person {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

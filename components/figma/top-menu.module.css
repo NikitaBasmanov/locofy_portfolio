@@ -1,0 +1,19 @@
+.menu,
+.topmenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.topmenu {
+  gap: var(--gap-11xl);
+}
+.menu {
+  align-self: stretch;
+  background-color: var(--color-black);
+  height: 119px;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}

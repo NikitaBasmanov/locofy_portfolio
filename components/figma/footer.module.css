@@ -1,0 +1,17 @@
+.copyright {
+  position: relative;
+}
+.footer {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-2xl) 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--dark);
+  font-family: var(--font-heebo);
+}

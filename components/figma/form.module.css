@@ -1,0 +1,63 @@
+.input {
+  border: 5px solid var(--color-black);
+  background-color: var(--color-white);
+  border-radius: var(--br-mini);
+  box-sizing: border-box;
+  width: 221px;
+  height: 48px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-10xs) 0;
+  align-items: center;
+  justify-content: center;
+}
+.textbutton {
+  position: central;
+  font-size: var(--font-size-mini);
+  font-weight: 600;
+  font-family: var(--buttontext);
+  color: var(--color-white);
+  text-align: center;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-6xl);
+  background-color: var(--color-black);
+  border-radius: var(--br-5xs);
+  transition: 0.3s;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button:active {
+  opacity: 0.7;
+}
+.button,
+.feedback,
+.inputParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.inputParent {
+  gap: var(--gap-24xl);
+}
+.feedback {
+  align-self: stretch;
+  background-color: var(--color-white);
+  height: 132px;
+}
+@media screen and (max-width: 930px) {
+  .button {
+    gap: var(--gap-7xs);
+  }
+}
+@media screen and (max-width: 700px) {
+  .feedback {
+    gap: var(--gap-xl);
+  }
+}

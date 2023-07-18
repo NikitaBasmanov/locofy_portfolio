@@ -1,0 +1,115 @@
+.imageIcon {
+  position: relative;
+  width: 266px;
+  height: 263px;
+  object-fit: cover;
+}
+.projecttitle,
+.projecttitle1 {
+  position: relative;
+  display: inline-block;
+  width: 311px;
+}
+.projecttitle1 {
+  font-size: var(--font-size-6xl);
+  letter-spacing: 1px;
+  line-height: 150%;
+  width: 495px;
+}
+.blocktext {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.text {
+  position: relative;
+  font-size: var(--font-size-6xl);
+  line-height: 60px;
+  font-weight: 900;
+  font-family: var(--font-heebo);
+  color: var(--color-white);
+  text-align: left;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-10xs) var(--padding-11xl);
+  background-color: var(--color-black);
+  border-radius: var(--br-base);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration:none;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button:active {
+  opacity: 0.7;
+}
+.blockinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xl);
+}
+.projectjava {
+  align-self: stretch;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-21xl);
+  text-align: left;
+  font-size: var(--font-size-16xl);
+  color: var(--dark);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 930px) {
+  .imageIcon {
+    width: 246px;
+    height: 243px;
+  }
+  .projecttitle {
+    font-size: var(--font-size-11xl);
+  }
+  .projecttitle1,
+  .text {
+    font-size: var(--font-size-xl);
+  }
+  .button {
+    gap: var(--gap-3xs);
+  }
+}
+@media screen and (max-width: 850px) {
+  .projecttitle {
+    font-size: var(--font-size-xl);
+  }
+  .projecttitle1 {
+    width: 385px;
+  }
+  .projecttitle1,
+  .text {
+    font-size: var(--font-size-xl);
+  }
+}
+@media screen and (max-width: 700px) {
+  .projecttitle,
+  .projecttitle1 {
+    text-align: center;
+  }
+  .blockinfo,
+  .button {
+    align-items: center;
+    justify-content: center;
+  }
+  .projectjava {
+    flex-direction: column;
+  }
+}
