@@ -18,7 +18,7 @@ const sendFormData = async (event,) => {
   const JSONdata = JSON.stringify(data)
 
   // API endpoint where we send form data.
-  const endpoint = '/api/contact'
+  const endpoint = '/api/ contact'
 
   // Form the request for sending data to the server.
   const options = {
