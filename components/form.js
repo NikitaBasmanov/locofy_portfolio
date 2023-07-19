@@ -26,7 +26,7 @@ const sendFormData = async (event,) => {
     method: 'POST',
     // Tell the server we're sending JSON.
     headers: {
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/ json',
     },
     // Body of the request is the JSON data we created above.
     body: JSONdata,
